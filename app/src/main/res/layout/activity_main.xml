@@ -21,12 +21,14 @@
     <EditText
         android:id="@+id/de"
         android:layout_width="159dp"
-        android:layout_height="97dp"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginBottom="79dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@android:string/VideoView_error_button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/gerar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.257" />
@@ -46,11 +48,16 @@
 
     <Button
         android:id="@+id/gerar"
-        android:layout_width="129dp"
-        android:layout_height="85dp"
+        android:layout_width="102dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="307dp"
         android:onClick="gerarNumeroAleatorio"
         android:text="Gerar"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="339dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
